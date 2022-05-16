@@ -1,0 +1,7 @@
+Color,Wavelenght,Voltage,Current
+Red,700,3.08,0.067
+Green,550,3.06,0.064
+Cyan,500,2.5,0.056
+Blue,450,2.07,0.049
+Violet,400,2.90,0.067
+Transparent,,3.15,0.073
