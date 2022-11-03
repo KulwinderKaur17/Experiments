@@ -1,0 +1,341 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <title>Tables</title>
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tg td {
+            width: 150px;
+            height: 40px;
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg th {
+            width: 150px;
+            border-color: black;
+            border-style: solid;
+            border-width: 1px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 10px 5px;
+            word-break: normal;
+        }
+
+        .tg .tg-0lax {
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .tg .tg-head {
+            text-align: center;
+            vertical-align: middle;
+            font-weight: bolder;
+            font-size: 16px;
+            /* background-color: #c0c0c0; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container my-5">
+        <div>
+            <h1>At Zero Magnetic Field</h1>
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-head">Order</th>
+                        <th class="tg-head">Radius (Pixel)</th>
+                        <th class="tg-head">Radius \((\mu m\))</th>
+                        <th class="tg-head">Radius\(^2\) \((\mu m)^2\)</th>
+                        <th class="tg-head">\( d_n^2= x_{n+1}^2-x_n^2\) \((\mu m)^2\)</th>
+                        <th class="tg-head">\(d_n^2 (mm^2)\)</th>
+                        <th class="tg-head">\(t = \frac{d^2\times \lambda}{d_n^2}(mm)\)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-0lax ">\(x_n\)</td>
+                        <td class="tg-0lax">160</td>
+                        <td class="tg-0lax">447.3</td>
+                        <td class="tg-0lax">200077.29</td>
+                        <td class="tg-0lax">-</td>
+                        <td class="tg-0lax">-</td>
+                        <td class="tg-0lax">-</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax ">\(x_{n+1}\)</td>
+                        <td class="tg-0lax">251</td>
+                        <td class="tg-0lax">703.5</td>
+                        <td class="tg-0lax">494912.25</td>
+                        <td class="tg-0lax">294834.96</td>
+                        <td class="tg-0lax">0.294835</td>
+                        <td class="tg-0lax">7.88</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax ">\(x_{n+2}\)</td>
+                        <td class="tg-0lax">315</td>
+                        <td class="tg-0lax">881.3</td>
+                        <td class="tg-0lax">776689.69</td>
+                        <td class="tg-0lax">281777.44</td>
+                        <td class="tg-0lax">0.281777</td>
+                        <td class="tg-0lax">8.25</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax ">\(x_{n+3}\)</td>
+                        <td class="tg-0lax">369</td>
+                        <td class="tg-0lax">1033.2</td>
+                        <td class="tg-0lax">1067502.24</td>
+                        <td class="tg-0lax">290812.55</td>
+                        <td class="tg-0lax">0.290813</td>
+                        <td class="tg-0lax">7.99</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax ">\(x_{n+4}\)</td>
+                        <td class="tg-0lax">416</td>
+                        <td class="tg-0lax">1166.2</td>
+                        <td class="tg-0lax">1360022.44</td>
+                        <td class="tg-0lax">292520.20</td>
+                        <td class="tg-0lax">0.292520</td>
+                        <td class="tg-0lax">7.94</td>
+                    </tr>
+                    <tr style="background-color:rgb(163, 172, 172);">
+                        <td class="tg-0lax tg-head" colspan="6">Average</td>
+
+                        <td class="tg-0lax">8.02</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="lead py-2 pb-3">
+                Distance between the Etalon and the Camera = 65 mm
+            </div>
+            <h1>
+                Rings at \(I=1.95A\)
+            </h1>
+
+            <table class="tg py-3 mb-3">
+                <thead>
+                    <tr>
+                        <th class="tg-head" colspan="2">Ring Number</th>
+                        <th class="tg-head">Radius</th>
+                        <th class="tg-head">Radius\(^2\) (Pixel\(^2\))</th>
+                        <th class="tg-head">Radius\(^2\) \((mm)^2\)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-head" rowspan="3">1</td>
+                        <td class="tg-head">a</td>
+                        <td class="tg-0lax">116</td>
+                        <td class="tg-0lax">13572.25</td>
+                        <td class="tg-0lax">0.106406</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-head">b</td>
+                        <td class="tg-0lax">155</td>
+                        <td class="tg-0lax">24025.00</td>
+                        <td class="tg-0lax">0.188356</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-head">c</td>
+                        <td class="tg-0lax">190</td>
+                        <td class="tg-0lax">36100.0</td>
+                        <td class="tg-0lax">0.283024</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-head" rowspan="3">2</td>
+                        <td class="tg-head">a</td>
+                        <td class="tg-0lax">226</td>
+                        <td class="tg-0lax">51302.25</td>
+                        <td class="tg-0lax">0.402210</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-head">b</td>
+                        <td class="tg-0lax">248</td>
+                        <td class="tg-0lax">61256.25</td>
+                        <td class="tg-0lax">0.480249</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-head">c</td>
+                        <td class="tg-0lax">270</td>
+                        <td class="tg-0lax">72900.0</td>
+                        <td class="tg-0lax">0.571536</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-head" rowspan="3">3</td>
+                        <td class="tg-head">a</td>
+                        <td class="tg-0lax">298</td>
+                        <td class="tg-0lax">89102.25</td>
+                        <td class="tg-0lax">0.698562</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-head">b</td>
+                        <td class="tg-0lax">314</td>
+                        <td class="tg-0lax">98282.25</td>
+                        <td class="tg-0lax">0.770533</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-head">c</td>
+                        <td class="tg-0lax">332</td>
+                        <td class="tg-0lax">110224.0</td>
+                        <td class="tg-0lax">0.864156</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-head" rowspan="3">4</td>
+                        <td class="tg-head">a</td>
+                        <td class="tg-0lax">354</td>
+                        <td class="tg-0lax">125670.25</td>
+                        <td class="tg-0lax">0.985255</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-head">b</td>
+                        <td class="tg-0lax">370</td>
+                        <td class="tg-0lax">136530.25</td>
+                        <td class="tg-0lax">1.070397</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-head">c</td>
+                        <td class="tg-0lax">384</td>
+                        <td class="tg-0lax">147456.0</td>
+                        <td class="tg-0lax">1.156055</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h1>Determining \(\mu_B\)</h1>
+            <table class="tg">
+                <thead>
+                    <tr>
+                        <th class="tg-0lax tg-head" rowspan="2">Ring Number</th>
+                        <th class="tg-0lax tg-head" colspan="5">Radius\(^2\) \((mm)^2\)</th>
+                        <th class="tg-0lax tg-head" style="background-color:rgb(163, 172, 172);" rowspan="2">Average
+                        </th>
+                    </tr>
+                    <tr>
+                        <th class="tg-0lax tg-head">a</th>
+                        <th class="tg-0lax tg-head">b</th>
+                        <th class="tg-0lax tg-head">c</th>
+                        <th class="tg-0lax tg-head">\(\delta ab\)</th>
+                        <th class="tg-0lax tg-head">\(\delta bc\)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="tg-0lax  tg-head">1</td>
+                        <td class="tg-0lax">0.106406</td>
+                        <td class="tg-0lax">0.188356</td>
+                        <td class="tg-0lax">0.283024</td>
+                        <td class="tg-0lax">0.081950</td>
+                        <td class="tg-0lax">0.094668</td>
+                        <td class="tg-0lax" style="background-color:rgb(163, 172, 172);"></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax  tg-head">\(\delta 12\)</td>
+                        <td class="tg-0lax">0.295803</td>
+                        <td class="tg-0lax">0.291893</td>
+                        <td class="tg-0lax">0.288512</td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax" style="background-color:rgb(163, 172, 172);">0.292069</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax  tg-head">2</td>
+                        <td class="tg-0lax">0.402210</td>
+                        <td class="tg-0lax">0.480249</td>
+                        <td class="tg-0lax">0.571536</td>
+                        <td class="tg-0lax">0.078039</td>
+                        <td class="tg-0lax">0.091287</td>
+                        <td class="tg-0lax" style="background-color:rgb(163, 172, 172);"></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax  tg-head">\(\delta 23\)</td>
+                        <td class="tg-0lax">0.296352</td>
+                        <td class="tg-0lax">0.290284</td>
+                        <td class="tg-0lax">0.292620</td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax" style="background-color:rgb(163, 172, 172);">0.293085</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax  tg-head">3</td>
+                        <td class="tg-0lax">0.698562</td>
+                        <td class="tg-0lax">0.770533</td>
+                        <td class="tg-0lax">0.864156</td>
+                        <td class="tg-0lax">0.071971</td>
+                        <td class="tg-0lax">0.093623</td>
+                        <td class="tg-0lax" style="background-color:rgb(163, 172, 172);"></td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax  tg-head">\(\delta 34\)</td>
+                        <td class="tg-0lax">0.286693</td>
+                        <td class="tg-0lax">0.299864</td>
+                        <td class="tg-0lax">0.291899</td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax" style="background-color:rgb(163, 172, 172);">0.292819</td>
+                    </tr>
+                    <tr>
+                        <td class="tg-0lax  tg-head">4</td>
+                        <td class="tg-0lax">0.985255</td>
+                        <td class="tg-0lax">1.070397</td>
+                        <td class="tg-0lax">1.156055</td>
+                        <td class="tg-0lax">0.085142</td>
+                        <td class="tg-0lax">0.085658</td>
+                        <td class="tg-0lax" style="background-color:rgb(163, 172, 172);"></td>
+                    </tr>
+                    <tr style="background-color:rgb(163, 172, 172);">
+                        <td class="tg-0lax tg-head">Average</td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax"></td>
+                        <td class="tg-0lax">0.079276</td>
+                        <td class="tg-0lax">0.091309</td>
+                        <td class="tg-0lax">0.292658</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="py-5">
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <img class="img-fluid pb-3" src="0.bmp" alt="">
+                    <div class="text-center">
+                        <h5>Rings at Zero Magnetic Field</h5>
+                    </div>
+                </div>
+                <div class="col-10 offset-1">
+                    <img class="img-fluid py-3" src="1.95.bmp" alt="">
+                    <div class="text-center">
+                        <h5>Rings at \(I=1.95A\)</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+</html>
